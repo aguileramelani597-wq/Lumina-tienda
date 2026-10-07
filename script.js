@@ -21,35 +21,35 @@ const productos = [
         nombre: "Remera urbana",
         descripcion: "Diseño moderno para un look urbano.",
         precio: 18000,
-        imagen: ".img/remera2.jpeg"
+        imagen: "img/remera2.jpeg"
     },
 
     {
         nombre: "Pantalón clásico",
         descripcion: "Pantalón cómodo y fácil de combinar.",
         precio: 28000,
-        imagen: ".img/pantalon1.jpeg"
+        imagen: "img/pantalon1.jpeg"
     },
 
     {
         nombre: "Pantalón moderno",
         descripcion: "Diseño moderno para combinar con diferentes prendas.",
         precio: 32000,
-        imagen: ".img/pantalon2.jpeg"
+        imagen: "img/pantalon2.jpeg"
     },
 
     {
         nombre: "Vestido elegante",
         descripcion: "Vestido elegante y femenino para diferentes ocasiones.",
         precio: 35000,
-        imagen: ".img/vestido1.jpeg"
+        imagen: "img/vestido1.jpeg"
     },
 
     {
         nombre: "Campera urbana",
         descripcion: "Campera moderna ideal para completar tu outfit.",
         precio: 45000,
-        imagen: ".img/campera.jpeg"
+        imagen: "img/campera.jpeg"
     }
 
 ];
