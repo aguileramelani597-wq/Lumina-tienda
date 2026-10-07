@@ -1,0 +1,487 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d96c8c;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d96c8c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 70px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #fff5f7,
+        #ffffff
+    );
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.subtitulo {
+    color: #d96c8c;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.hero-text p:not(.subtitulo) {
+    font-size: 18px;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: #d96c8c;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #bd526f;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos-section {
+    padding: 90px 8%;
+}
+
+.titulo-section {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+.titulo-section h2 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.titulo-section p:not(.subtitulo) {
+    color: #777;
+}
+
+
+/* GRID */
+
+.productos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* TARJETA */
+
+.producto {
+    background-color: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    opacity: 0;
+
+    transform: translateY(30px);
+}
+
+.producto.mostrar {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+.producto:hover {
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.14);
+
+    transform: translateY(-8px);
+}
+
+
+/* IMAGEN */
+
+.producto-imagen {
+    width: 100%;
+
+    height: 350px;
+
+    overflow: hidden;
+
+    background-color: #f5f5f5;
+}
+
+.producto-imagen img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.producto:hover .producto-imagen img {
+    transform: scale(1.05);
+}
+
+
+/* INFORMACIÓN */
+
+.producto-info {
+    padding: 25px;
+}
+
+.producto-info h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #777;
+
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+.precio {
+    color: #d96c8c;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTÓN WHATSAPP */
+
+.comprar {
+    display: block;
+
+    text-align: center;
+
+    padding: 12px;
+
+    background-color: #25d366;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.comprar:hover {
+    background-color: #1ebe5d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros {
+    padding: 100px 8%;
+
+    background-color: #fff0f3;
+
+    text-align: center;
+}
+
+.nosotros-contenido {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.nosotros h2 {
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+.nosotros p:not(.subtitulo) {
+    color: #666;
+
+    margin-bottom: 15px;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    padding: 100px 8%;
+
+    background-color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .productos-section {
+        padding: 60px 20px;
+    }
+
+    .titulo-section h2 {
+        font-size: 32px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .producto-imagen {
+        height: 400px;
+    }
+
+    .nosotros {
+        padding: 70px 20px;
+    }
+
+    .nosotros h2 {
+        font-size: 34px;
+    }
+
+    .contacto {
+        padding: 70px 20px;
+    }
+}
